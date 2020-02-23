@@ -1,10 +1,10 @@
 <div class="container">
   <p>
-    app is working and its counter is: {{ counter.value }}
+    2nd child of app component is working and its counter is: {{ counter.value }}
   </p>
 
   <p>
-    <button type="button" (click)="triggerChanges()">detectChanges()</button>
+    <button type="button" (click)="triggerChanges()">detectChanges()</button>  
     <button type="button" (click)="incrementValue()">incrementValue()</button>
   </p>
 
@@ -15,8 +15,6 @@
   </p>
 
   <div class="children">
-    <app-child-one></app-child-one>
-
-    <app-child-two></app-child-two>
+    <app-child-two-one></app-child-two-one>
   </div>
 </div>

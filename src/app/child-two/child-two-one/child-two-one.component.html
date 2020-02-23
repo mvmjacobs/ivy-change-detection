@@ -1,10 +1,10 @@
 <div class="container">
   <p>
-    app is working and its counter is: {{ counter.value }}
+    1st child of the 2nd child is working and its counter is: {{ counter.value }}
   </p>
 
   <p>
-    <button type="button" (click)="triggerChanges()">detectChanges()</button>
+    <button type="button" (click)="triggerChanges()">detectChanges()</button>  
     <button type="button" (click)="incrementValue()">incrementValue()</button>
   </p>
 
@@ -13,10 +13,4 @@
     <br />
     <input type="checkbox" [(ngModel)]="markForCheck" [disabled]="!isTimerEnabled">{{ markForCheck ? 'disable' : 'enable'}} markForCheck()
   </p>
-
-  <div class="children">
-    <app-child-one></app-child-one>
-
-    <app-child-two></app-child-two>
-  </div>
 </div>
