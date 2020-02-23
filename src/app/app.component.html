@@ -10,7 +10,7 @@
 
   <p>
     <input type="checkbox" (change)="toggleTimer()">{{ isTimerEnabled ? 'disable' : 'enable'}} auto increment
-    <br/>
+    <br />
     <input type="checkbox" [(ngModel)]="markForCheck" [disabled]="!isTimerEnabled">{{ markForCheck ? 'disable' : 'enable'}} markForCheck()
   </p>
 </div>
